@@ -35,7 +35,8 @@ jobs:
           @semantic-release/release-notes-generator@14 \
           @semantic-release/github@12 \
           @semantic-release/exec@7 \
-          @semantic-release/changelog@6
+          @semantic-release/changelog@6 \
+          @semantic-release/git@10
 
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
